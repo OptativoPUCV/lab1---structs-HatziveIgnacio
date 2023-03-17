@@ -214,3 +214,18 @@ Fri 17 Mar 2023 09:45:02 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 34401a2
+Fri 17 Mar 2023 09:46:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:19: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   85 |   Vector *vec =  (vector*) malloc( n * sizeof(vector) );
+      |                   ^~~~~~
+      |                   Vector
+exercises.c:85:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:85:26: error: expected expression before ‘)’ token
+   85 |   Vector *vec =  (vector*) malloc( n * sizeof(vector) );
+      |                          ^
+Compilation failed
+fda4a17
