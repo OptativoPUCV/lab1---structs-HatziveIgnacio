@@ -49,3 +49,9 @@ exercises.c:65:5: error: assignment to ‘Persona *’ from ‘int’ makes poin
 cc1: all warnings being treated as errors
 Compilation failed
 d32242a
+Fri 17 Mar 2023 09:32:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 40/70
+5cb399b
