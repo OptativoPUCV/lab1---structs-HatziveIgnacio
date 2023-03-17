@@ -15,3 +15,20 @@ exercises.c:84:15: error: ‘vec.datos’ is used uninitialized [-Werror=uniniti
 cc1: all warnings being treated as errors
 Compilation failed
 c208af1
+Fri 17 Mar 2023 06:21:14 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:84:26: error: ‘vec.datos’ is used uninitialized [-Werror=uninitialized]
+   84 |   vec.datos = realloc(vec.datos, n * sizeof(int));
+      |                       ~~~^~~~~~
+exercises.c:82:10: note: ‘vec’ declared here
+   82 |   Vector vec;
+      |          ^~~
+exercises.c:84:15: error: ‘vec.datos’ is used uninitialized [-Werror=uninitialized]
+   84 |   vec.datos = realloc(vec.datos, n * sizeof(int));
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+698bca4
