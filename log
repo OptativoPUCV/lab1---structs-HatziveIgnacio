@@ -194,3 +194,13 @@ exercises.c:86:30: error: expected expression before ‘Vector’
       |                              ^~~~~~
 Compilation failed
 e4ecb88
+Fri 17 Mar 2023 09:44:14 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:38: error: expected expression before ‘Vector’
+   85 |   Vector *vec =  malloc( n * (sizeof Vector) );
+      |                                      ^~~~~~
+Compilation failed
+a90c9b7
