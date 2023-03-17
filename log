@@ -326,3 +326,14 @@ exercises.c:86:34: error: ‘*vec.datos’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 2499963
+Fri 17 Mar 2023 09:56:13 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:34: error: ‘vec’ is a pointer; did you mean to use ‘->’?
+   86 |   vec->datos = (int*) realloc(vec.datos, n * sizeof(int));
+      |                                  ^
+      |                                  ->
+Compilation failed
+bc9d9bb
