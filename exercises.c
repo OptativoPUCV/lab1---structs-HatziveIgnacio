@@ -85,7 +85,7 @@ Vector * crearVector(int n)
   Vector *vec;
   *vec = malloc( sizeof Vector );
 
-  vec.capacidad = n;
+  vec->capacidad = n;
    return vec;
 }
 
