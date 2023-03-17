@@ -109,3 +109,20 @@ exercises.c:90:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 b7f6fe0
+Fri 17 Mar 2023 09:40:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:25: error: expected expression before ‘Vector’
+   86 |   vec = malloc( (sizeof Vector) );
+      |                         ^~~~~~
+exercises.c:89:11: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   89 |    return *vec;
+      |           ^~~~
+exercises.c:90:1: error: control reaches end of non-void function [-Werror=return-type]
+   90 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+41cc5cd
