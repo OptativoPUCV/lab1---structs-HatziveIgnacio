@@ -424,3 +424,18 @@ exercises.c:133:3: error: invalid type argument of unary ‘*’ (have ‘Vector
       |   ^~~~~
 Compilation failed
 a9ab485
+Fri 17 Mar 2023 10:22:00 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:132:4: error: ‘c’ is a pointer; did you mean to use ‘->’?
+  132 |   c.datos[0] = a1+b1;
+      |    ^
+      |    ->
+exercises.c:133:4: error: ‘c’ is a pointer; did you mean to use ‘->’?
+  133 |   c.datos[1] = a2+b2;
+      |    ^
+      |    ->
+Compilation failed
+08cba31
