@@ -375,3 +375,14 @@ exercises.c:86:34: error: ‘*vec.datos’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 1c8121d
+Fri 17 Mar 2023 09:58:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:31: error: ‘datos’ undeclared (first use in this function)
+   86 |   vec->datos = (int*) realloc(datos, n * sizeof(int));
+      |                               ^~~~~
+exercises.c:86:31: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d2dd120
