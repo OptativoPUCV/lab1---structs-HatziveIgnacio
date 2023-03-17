@@ -13,7 +13,9 @@ Programe la función void swap(int *a, int *b), la cual
 intercambia los valores de las variables apuntadas por a y b.
 */
 void swap(int *a, int *b) {
-
+  int temp=*a;
+    *a = *b;
+    *b = temp;
 }
 
 /*
@@ -22,8 +24,21 @@ Programe la función void arrayMaxMin(int *a, int n, int *max, int *min),
 la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
-void arrayMaxMin(int *a, int n, int *max, int *min) {
-    
+void arrayMaxMin(int *a, int n, int *max, int *min) 
+{
+  *min = a[0];
+  *max = a[0];
+  for (int i = 0; i < n; i++) 
+    {
+        if (a[i] < *min)
+        {
+            *min = a[i];
+        }
+        if (a[i] > *max) 
+        {
+            *max = a[i];
+        }
+    }
 }
 
 
@@ -62,7 +77,12 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
+Vector * crearVector(int n) 
+{
+  Vector vec;
+  vec.capacidad=n;
+  vec.datos = realloc(vec.datos, n * sizeof(int));
+  
    return NULL;
 }
 
@@ -71,8 +91,9 @@ Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
 la cual asigna el valor a la posición i del vector v.
 */
-void asignarValor(Vector * v, int i, int valor) {
-
+void asignarValor(Vector * v, int i, int valor) 
+{
+  v->datos[i] = valor;
 }
 
 /*
