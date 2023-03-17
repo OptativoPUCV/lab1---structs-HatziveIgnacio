@@ -439,3 +439,9 @@ exercises.c:133:4: error: ‘c’ is a pointer; did you mean to use ‘->’?
       |    ->
 Compilation failed
 08cba31
+Fri 17 Mar 2023 10:22:11 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  8|0
+total_score: 70/70
+427dc12
