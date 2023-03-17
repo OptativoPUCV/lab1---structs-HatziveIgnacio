@@ -229,3 +229,21 @@ exercises.c:85:26: error: expected expression before ‘)’ token
       |                          ^
 Compilation failed
 fda4a17
+Fri 17 Mar 2023 09:46:35 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:3: error: ‘vec’ undeclared (first use in this function)
+   87 |   vec->capacidad = n;
+      |   ^~~
+exercises.c:87:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:86:11: error: unused variable ‘nuevoVector’ [-Werror=unused-variable]
+   86 |   Vector* nuevoVector = (Vector*) malloc(sizeof(Vector));
+      |           ^~~~~~~~~~~
+exercises.c:89:1: error: control reaches end of non-void function [-Werror=return-type]
+   89 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8af700c
