@@ -348,3 +348,19 @@ exercises.c:86:34: error: ‘*vec.datos’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 7ef97c5
+Fri 17 Mar 2023 09:57:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:31: error: incompatible type for argument 1 of ‘realloc’
+   86 |   vec->datos = (int*) realloc(*vec, n * sizeof(int));
+      |                               ^~~~
+      |                               |
+      |                               Vector
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:551:29: note: expected ‘void *’ but argument is of type ‘Vector’
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |                       ~~~~~~^~~~~
+Compilation failed
+baf904e
