@@ -297,3 +297,15 @@ test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 b98fe50
+Fri 17 Mar 2023 09:51:21 PM UTC: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:37: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   85 |   Vector *vec =  malloc( n * sizeof(vector) );
+      |                                     ^~~~~~
+      |                                     Vector
+exercises.c:85:37: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2a395d2
