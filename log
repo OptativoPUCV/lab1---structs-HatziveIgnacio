@@ -38,3 +38,14 @@ Fri 17 Mar 2023 06:22:56 PM UTC:
  tests:  4|4
 total_score: 30/70
 cb62df0
+Fri 17 Mar 2023 09:31:51 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:65:5: error: assignment to ‘Persona *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   65 |   p = edad;
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+d32242a
