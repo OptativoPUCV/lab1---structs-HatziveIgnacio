@@ -55,3 +55,23 @@ Fri 17 Mar 2023 09:32:04 PM UTC:
  tests:  5|3
 total_score: 40/70
 5cb399b
+Fri 17 Mar 2023 09:39:04 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:28: error: expected expression before ‘Vector’
+   86 |   vec = malloc(n * (sizeof Vector) );
+      |                            ^~~~~~
+exercises.c:88:6: error: invalid type argument of ‘->’ (have ‘Vector’)
+   88 |   vec->capacidad = n;
+      |      ^~
+exercises.c:89:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   89 |    return vec;
+      |           ^~~
+exercises.c:90:1: error: control reaches end of non-void function [-Werror=return-type]
+   90 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+de16435
