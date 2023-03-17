@@ -84,7 +84,7 @@ Vector * crearVector(int n)
 {
   //Vector *vec =  (vector*) malloc( n * sizeof(vector) );
   Vector* nuevoVector = (Vector*) malloc(sizeof(Vector));
-  vec->capacidad = n;
+  nuevoVector->capacidad = n;
    return vec;
 }
 

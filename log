@@ -247,3 +247,18 @@ exercises.c:89:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 8af700c
+Fri 17 Mar 2023 09:46:55 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:11: error: ‘vec’ undeclared (first use in this function)
+   88 |    return vec;
+      |           ^~~
+exercises.c:88:11: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:89:1: error: control reaches end of non-void function [-Werror=return-type]
+   89 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a4692f0
