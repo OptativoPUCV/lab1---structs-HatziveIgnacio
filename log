@@ -386,3 +386,9 @@ exercises.c:86:31: error: ‘datos’ undeclared (first use in this function)
 exercises.c:86:31: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d2dd120
+Fri 17 Mar 2023 09:58:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+7def8f8
