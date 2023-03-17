@@ -315,3 +315,14 @@ Fri 17 Mar 2023 09:55:36 PM UTC:
  tests:  6|2
 total_score: 50/70
 1f8959f
+Fri 17 Mar 2023 09:56:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:86:34: error: ‘*vec.datos’ is used uninitialized [-Werror=uninitialized]
+   86 |   vec->datos = (int*) realloc(vec->datos, n * sizeof(int));
+      |                               ~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2499963
