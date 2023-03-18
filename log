@@ -445,3 +445,22 @@ Fri 17 Mar 2023 10:22:11 PM UTC:
  tests:  8|0
 total_score: 70/70
 427dc12
+Sat 18 Mar 2023 03:48:28 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:133:27: error: expected ‘)’ before ‘}’ token
+  133 |   asignarValor(c, 0, a2+b2
+      |               ~           ^
+      |                           )
+  134 | }
+      | ~                          
+exercises.c:133:27: error: expected ‘;’ before ‘}’ token
+  133 |   asignarValor(c, 0, a2+b2
+      |                           ^
+      |                           ;
+  134 | }
+      | ~                          
+Compilation failed
+c9e93c3
